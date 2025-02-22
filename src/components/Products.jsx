@@ -13,7 +13,7 @@ export default function Products() {
     const getProducts = async (e) => {
 
         try {
-            const res = await fetch("http://localhost:8080/products", {
+            const res = await fetch("http://localhost:3001/products", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -37,7 +37,7 @@ export default function Products() {
     // to delete the product
     const deleteProduct = async (id) => {
 
-        const response = await fetch(`http://localhost:8080/deleteproduct/${id}`, {
+        const response = await fetch(`http://localhost:3001/deleteproduct/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
